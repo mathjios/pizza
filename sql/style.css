@@ -1,0 +1,120 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+}
+/*
+bouton connect
+*/
+.connect{
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 140px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  float: right;
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.connect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.connect:hover {
+  color: #fff;
+}
+
+.connect:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.coco{
+    opacity: 0;
+}
+
+/*
+carte bouton
+*/
+.card {
+    margin-top: 250px;
+    margin-left: 100px;
+    width: 190px;
+    height: 150px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: inline-flex;
+   
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+    border-color: aquamarine;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+img{
+    height: 100px;
+    width: 200px;
+}
