@@ -19,6 +19,7 @@ bouton connect
   cursor: pointer;
   transform: skew(-21deg);
   float: right;
+  margin-right: 10px;
 }
 
 span {
